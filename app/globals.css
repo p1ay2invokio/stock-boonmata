@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  background-color: #162332;
+} */
+
+
+@font-face {
+  font-family: 'light';
+  src: url('../public/Kanit-Light.ttf');
+}
+
+@font-face {
+  font-family: 'medium';
+  src: url('../public/Kanit-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'regular';
+  src: url('../public/Kanit-Regular.ttf');
+}
