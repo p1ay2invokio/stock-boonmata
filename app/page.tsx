@@ -11,7 +11,6 @@ import doilor from "@/mockup_doilor";
 import maekhan from "@/mockup_maekhan";
 //@ts-ignore
 import sanpatong from "@/mockup_sanpatong";
-import { IPClass } from "./methods/ip.class";
 import { IoSettingsSharp } from "react-icons/io5";
 import { BsDatabaseFillGear } from "react-icons/bs";
 import { toast, ToastContainer } from "react-toastify";
@@ -149,18 +148,18 @@ export default function Home() {
 
           <div className="w-full h-[] flex justify-center mt-[20px]">
             <div onClick={() => {
-              let ip = new IPClass()
+              // let ip = new IPClass()
 
-              let payload = [
-                doilorServer,
-                maekhanServer,
-                sanpatongServer
-              ]
+              // let payload = [
+              //   doilorServer,
+              //   maekhanServer,
+              //   sanpatongServer
+              // ]
 
-              ip.updateConfig(payload).then((res) => {
-                toast("Update Successfully", { theme: 'light', hideProgressBar: true, type: 'success', autoClose: 1500, closeButton: false })
-                setModal(false)
-              })
+              // ip.updateConfig(payload).then((res) => {
+              //   toast("Update Successfully", { theme: 'light', hideProgressBar: true, type: 'success', autoClose: 1500, closeButton: false })
+              //   setModal(false)
+              // })
             }} className="w-[50%] h-[40px] bg-blue-600 text-white flex justify-center items-center rounded-[8px] cursor-pointer">
               <p className="font-[medium]">อัพเดต (UPDATE)</p>
             </div>
@@ -198,7 +197,7 @@ export default function Home() {
         <motion.div initial={{ backgroundColor: 'white' }} animate={select == 0 ? { backgroundColor: '#60a5facc', color: 'white' } : { backgroundColor: '#ffffff' }} transition={{ duration: 0.2 }} onClick={() => {
           setSelect(0)
           // setPage(1)
-          setCurrentIp("49.49.25.12:3001")
+          setCurrentIp("dl20.ddns.net:3001")
         }} className={`flex justify-center items-center w-full flex-col space-y-[-5px] rounded-[12px] cursor-pointer relative`}>
           <p className="font-[medium] text-[18px]">ดอยหล่อ</p>
           <p className="font-[light] text-[14px]">Doilor</p>
