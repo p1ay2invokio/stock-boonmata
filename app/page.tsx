@@ -198,7 +198,7 @@ export default function Home() {
         <motion.div initial={{ backgroundColor: 'white' }} animate={select == 0 ? { backgroundColor: '#60a5facc', color: 'white' } : { backgroundColor: '#ffffff' }} transition={{ duration: 0.2 }} onClick={() => {
           setSelect(0)
           // setPage(1)
-          setCurrentIp("dl20.ddns.net:3001")
+          setCurrentIp("49.49.25.12:3001")
         }} className={`flex justify-center items-center w-full flex-col space-y-[-5px] rounded-[12px] cursor-pointer relative`}>
           <p className="font-[medium] text-[18px]">ดอยหล่อ</p>
           <p className="font-[light] text-[14px]">Doilor</p>
